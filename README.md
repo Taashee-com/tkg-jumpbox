@@ -56,6 +56,9 @@ We will majorly be following the documentation here to do the installation: http
 3. Navigate to https://my.vmware.com/group/vmware/downloads/details?downloadGroup=TKG-113&productId=988 to download the latest CLI **for Linux** (1.1.3 at the point of this writing). You will need to accept the EULA in order to download the CLI ;)
 4. Open a new terminal window inside the VM and run the following commands to install the CLI
     ```bash
+    # Change directory to where you downloaded the file
+    cd Downloads
+
     # unzip the gz file you downloaded
     gunzip tkg-linux-amd64-v1.1.3_vmware.1.gz
 
@@ -99,6 +102,3 @@ The following steps are a short summarization for the detailed documentation at 
         export AWS_B64ENCODED_CREDENTIALS=$(clusterawsadm alpha bootstrap encode-aws-credentials)
     ```
 
-The objective of observability is to go beyond simple monitoring by providing correlation beyond metrics captured across technology layers. Ideally though, monitoring should be a value addition instead of being another tool in the box that needs to be managed. Wavefront (now known as Tanzu Observability), is a SaaS tool that gives you this visibility at "real cloud scale". Tanzu Observability is a vendor neutral observability tool.
-
-https://www.openshift.com/blog/wavefront-automates-and-unifies-red-hat-openshift-observability-full-stack
